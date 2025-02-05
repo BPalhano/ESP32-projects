@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := app-template
+PROJECT_NAME := esp_i2s_blink_test
 
 include $(IDF_PATH)/make/project.mk
 

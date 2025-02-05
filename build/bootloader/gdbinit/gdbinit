@@ -1,0 +1,2 @@
+source /home/eulus/HD/Workspace/ESP32-projects/build/bootloader/gdbinit/symbols
+source /home/eulus/HD/Workspace/ESP32-projects/build/bootloader/gdbinit/connect
