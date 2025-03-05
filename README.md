@@ -1,9 +1,9 @@
 # ESP32-projects
 
+## Installing ESP-IDF
+The ESP-IDF needs to be installed and built on your machine to run the project. For installation, follow these steps:
 
-To run the project, it is need the ESP-IDF installed and builded in your machine, for installating, follow the steps:
-
-## For Ubuntu
+### For Ubuntu
 
 1. update the machines
 ```
@@ -31,7 +31,7 @@ sudo apt-get install -y \
 ```
 
 3. Generate a dependence for ESP-IDF at home
-open a new terminal and type
+Open a new terminal and type
 
 ```
 mkdir -p ~/esp
@@ -42,9 +42,27 @@ git clone --recursive https://github.com/espressif/esp-idf.git
 4. Setup the ESP-IDF compiler
 
 ```
-cd esp-idf
-git checkout v5.0
-git submodule update --init --recursive
+cd ~/esp/esp-idf
+./install.sh all
+```
+
+5. In ```.bashrc```, setup an alias to call idf in any dependence you are
+
+```
+cd ~/esp/esp-idf
+./install.sh all
+```
+
+or do just ```echo ". $HOME/esp/esp-idf/export.sh" >> ~/.bashrc ```
+
+## Using ESP-IDF in this project
+
+After cloning this project, do ``` cd ESP32-projects/```, connect your ESP board in your USB port and 
+
+```
+idf.py build
+idf.py flash
+idf.py monitor
 ```
 
 
