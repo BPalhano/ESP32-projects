@@ -13,7 +13,7 @@ sudo apt upgrade
 
 2. Installing all dependeces
 ```
-sudo apt-get install -y \
+sudo apt install -y \
     git \
     wget \
     flex \
